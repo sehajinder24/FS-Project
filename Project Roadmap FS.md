@@ -3,7 +3,7 @@
 
 ## Development Roadmap (8 Weeks)
 
-### Tech Stack
+### Tech Stack 
 - **Frontend:** React
 - **Backend:** Spring Boot
 - **ORM:** Hibernate
