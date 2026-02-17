@@ -1,7 +1,7 @@
 # FS-Project
 # Smart Inventory Management System
 
-## Development Roadmap (8 Weeks)
+## Development Roadmap (8 Modules)
 
 ### Tech Stack 
 - **Frontend:** React
@@ -26,7 +26,7 @@ Automates inventory tracking and reordering processes.
 
 ---
 
-## Week 1 – Main Dashboard (HTML + CSS)
+## Module 1 – Main Dashboard (HTML + CSS)
 
 ### Focus
 Inventory Dashboard UI
@@ -47,7 +47,7 @@ Inventory Dashboard UI
 
 ---
 
-## Week 2 – Other UI Pages (HTML Websites)
+## Module 2 – Other UI Pages (HTML Websites)
 
 ### Focus
 Complete Frontend Structure
@@ -74,7 +74,7 @@ Complete Frontend Structure
 
 ---
 
-## Week 3 – Database Design (MySQL)
+## Module 3 – Database Design (MySQL)
 
 ### Focus
 Data Layer
@@ -97,7 +97,7 @@ Data Layer
 
 ---
 
-## Week 4 – Connect Database with Backend
+## Module 4 – Connect Database with Backend
 
 ### Focus
 Backend & Data Integration
@@ -116,7 +116,7 @@ Backend & Data Integration
 
 ---
 
-## Week 5 – Security & Role-Based Access
+## Module 5 – Security & Role-Based Access
 
 ### Focus
 Authentication & Authorization
@@ -156,7 +156,7 @@ Inventory Automation
 
 ---
 
-## Week 7 – Reporting & Alerts
+## Module 7 – Reporting & Alerts
 
 ### Focus
 Monitoring & Insights
@@ -178,7 +178,7 @@ Monitoring & Insights
 
 ---
 
-## Week 8 – APIs, Logging & Final Integration
+## Module 8 – APIs, Logging & Final Integration
 
 ### Focus
 System Completion
