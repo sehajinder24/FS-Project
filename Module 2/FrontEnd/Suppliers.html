@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory Dashboard</title>
+    <link rel="stylesheet" href="css/Dashboard.css">
+</head>
+<body>
+
+
+<header class="header">
+    <h1>Smart Inventory Management System</h1>
+</header>
+<br>
+<br>
+<nav class="sidebar">
+    <ul>
+        <li><a href="HX404.html">Secret Button</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="admin.html">Admin Panel</a></li>
+        <li><a href="suppliers.html">Suppliers</a></li>
+        <li><a href="alerts.html">Alerts</a></li>
+        <li><a href="reports.html">Reports</a></li>
+    </ul>
+</nav>
+<br>
+
+<main class="main-content">
+<main class="main-content">
+    <h2>Supplier Stock Request</h2>
+
+    <div class="supplier-layout">
+
+        <!-- Product List -->
+        <div class="supplier-products">
+            <h3>Available Products</h3>
+            <div id="supplierProducts"></div>
+        </div>
+
+        <!-- Cart -->
+        <div class="supplier-cart">
+            <h3>Request Cart</h3>
+            <div id="cartItems"></div>
+            <button onclick="sendRequest()">Send Request</button>
+            <p id="requestMessage"></p>
+        </div>
+
+    </div>
+</main>
+
+<script src="supply.js"></script>
+<script src="inventory.js"></script>
+
+</main>
+
+</html>

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory Dashboard</title>
+    <link rel="stylesheet" href="css/Dashboard.css">
+</head>
+<body>
+
+
+<header class="header">
+    <h1>Smart Inventory Management System</h1>
+</header>
+<br>
+<br>
+<nav class="sidebar">
+    <ul>
+        <li><a href="HX404.html">Secret Button</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="admin.html">Admin Panel</a></li>
+        <li><a href="suppliers.html">Suppliers</a></li>
+        <li><a href="alerts.html">Alerts</a></li>
+        <li><a href="reports.html">Reports</a></li>
+    </ul>
+</nav>
+<br>
+
+<main class="main-content">
+<h2>Inventory Reports & Analytics</h2>
+
+<div id="reportSummary"></div>
+
+<button onclick="toggleDetails()">View Detailed Report</button>
+
+<div id="detailPanel" class="detail-panel">
+    <h3>Detailed Report</h3>
+    <button onclick="toggleDetails()">Close</button>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Stock</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="reportTable"></tbody>
+    </table>
+</div>
+
+<script src="inventory.js"></script>
+
+</main>
+
+</html>

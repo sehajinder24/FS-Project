@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar {
+    margin-top: 50px;
+    width: 220px;
+    border: 1px solid black;
+    background: #34495e;
+    height: 690px;
+}
+
+
+.sidebar2 {
+    margin-top: 90px;
+    margin-left: 80px;
+    padding: 0;
+    width: 920px;
+    height: 690px;
+}
+
+
+.sidebar ul {
+    list-style: none;
+    border: 2px solid black;
+    padding: 0;
+}
+
+.sidebarul2 {
+    margin-top: 50px;
+    margin-left: 80px;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    background: #1abc9c;
+}
+
+.main-content {
+    margin-top: 80px;
+    margin-left: 80px;
+    padding: 20px;
+    width: 100%;
+}
+
+.second-content {
+    margin-left: 100px;
+    margin-top: 120px;
+    width: 300px;;
+}
+
+
+.cards {
+    display: flex;
+    gap: 10px;
+}
+
+.card {
+    padding: 10px;
+    width: 150px;
+    border: 4px solid black;
+    border-radius: 8px;
+    color: white;
+}
+
+.normal {
+    background: #2ecc71;
+}
+
+.low {
+    background: #f39c12;
+}
+
+.out {
+    background: #e74c3c;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 250px;
+}
+
+.blue {
+  background: #3498db;
+}
+
+.red {
+  background: #e74c3c;
+}
+
+.green {
+  background: #2ecc71;
+}
+
+.pink {
+  background: #ff69b4;
+}
+
+.orange {
+  background: #e67e22;
+}
+
+.yellow {
+  background: #f1c40f;
+}
+
+.gold {
+  background: #d4af37;
+}
+
+.detail-panel {
+    position: fixed;
+    top: 108px;
+    right: -500px; /* Hidden initially */
+    width: 450px;
+    height: 100%;
+    background: dadce0;
+    border-left: 4px solid #2c3e50;
+    padding: 20px;
+    overflow-y: auto;
+    transition: right 0.5s ease;
+    z-index: 9000;
+}
+
+.detail-panel.show {
+    right: 0; /* Slide in */
+}
+.divider {
+    height: 2px;
+    background: #ccc;
+    margin: 20px 0;
+    width: 30%;
+}
+
+
+.supplier-layout {
+    display: flex;
+    gap: 40px;
+}
+
+.supplier-products {
+    flex: 2;
+}
+
+.supplier-cart {
+    flex: 1;
+    border-left: 3px solid #ccc;
+    padding-left: 20px;
+}
+
+.product-box {
+    border: 2px solid #2c3e50;
+    padding: 10px;
+    margin-bottom: 10px;
+}
