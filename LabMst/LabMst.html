@@ -1,0 +1,97 @@
+<html>
+<body>
+
+<h1>Full Stack Lab MST</h1>
+<h4>Student Task Manager App</h4>
+
+<h3>Enter Task Details</h3>
+
+Name: <input type="text" id="taskName">
+<br><br>
+
+Priority:
+<select id="priority">
+<option>Low</option>
+<option>Medium</option>
+<option>High</option>
+</select>
+
+<br><br>
+<button onclick="addTask()">Submit</button>
+
+<br><br>
+
+Filter:<select id="filterTasks" onchange="displayTasks()">
+<option>Show All</option>
+<option>Completed</option>
+<option>Pending</option>
+</select>
+
+FilterPriority:<select id="TaskP" onchange="displayTasks()">
+<option>All</option>
+<option>Low</option>
+<option>Medium</option>
+<option>High</option>
+</select>
+
+<h2>Current Task List</h2>
+<ul id="taskList" ><h1></h1></ul>
+
+
+<script>
+let tasks = [];
+function addTask() {
+	let name = document.getElementById("taskName").value;
+	let priority = document.getElementById("priority").value;
+	if(name === "") return;
+		tasks.push({name:name, priority:priority, completed:false});
+		document.getElementById("taskName").value = "";
+		displayTasks();
+	}
+function displayTasks(){
+	let list = document.getElementById("taskList");
+	let filter = document.getElementById("filterTasks").value;
+	let Priority = document.getElementById("TaskP")
+	list.innerHTML = "";
+	for(let i=0;i<tasks.length;i++){
+		if(filter=="Completed" && !tasks[i].completed) continue;
+		if(filter=="Pending" && tasks[i].completed) continue;
+		let li = document.createElement("li");
+		li.innerText = tasks[i].name;
+		if(tasks[i].priority == "High"){
+		li.style.color = "red";
+		}
+		else if(tasks[i].priority == "Medium"){
+		li.style.color = "yellow";
+		}
+		else{
+		li.style.color = "green";
+		}
+		let completeBtn = document.createElement("button");
+		if(tasks[i].completed == "true"){
+			completeBtn.innerText = "Completed";
+		}
+		else{
+			completeBtn.innerText = "Complete";
+		}
+		completeBtn.onclick = function(){
+		tasks[i].completed = true;
+		displayTasks();
+		};
+		
+		let deleteBtn = document.createElement("button");
+		deleteBtn.innerText = "Delete";
+		deleteBtn.onclick = function(){
+		tasks.splice(i,1);
+		displayTasks();
+		};
+
+		li.appendChild(completeBtn);
+		li.appendChild(deleteBtn);
+		list.appendChild(li);
+		}
+}
+
+</script>
+</body>
+</html>
