@@ -1,0 +1,5 @@
+com\inventory\ims\repository\ProductRepository.class
+com\inventory\ims\model\Product.class
+com\inventory\ims\DemoApplication.class
+com\inventory\ims\service\ProductService.class
+com\inventory\ims\controller\ProductController.class
